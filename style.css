@@ -12,6 +12,11 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
     width: 250px;
     height: 100vh;
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s ease;
+    z-index: -1;
+
 }
 
 .top {
@@ -32,11 +37,11 @@ body {
 }
 
 .head {
-    font-size: 45px;
+    font-size: 55px;
     font-weight: bold;
     color: white;
-    margin-top: 140px;
-    margin-left: 90px;
+    margin-top: 160px;
+    margin-left: 390px;
 }
 .text {
     font-size: 20px;
@@ -45,4 +50,57 @@ body {
     left: 7px;
     text-decoration: none;
     color: white;
+}
+
+.text2 {
+    font-size: 29px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 40px;
+    top: 290px;
+}
+
+.box {
+    z-index: 2;
+}
+
+#check {
+    display: none;
+}
+
+.but {
+    position: absolute;
+    font-size: 28px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+#check:checked ~ .but {
+    display: none;
+}
+
+.ton {
+    position: absolute;
+    font-size: 27px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    top: 10px;
+    left: 210px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+#check:checked ~ .ton {
+    opacity: 1;
+}
+
+#check:checked ~ .sidebar {
+    left: 0px;
 }
