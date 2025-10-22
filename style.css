@@ -78,7 +78,7 @@ body {
     top: 5px;
     left: 5px;
     opacity: 1;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease;
 }
 
 #check:checked ~ .but {
@@ -92,13 +92,13 @@ body {
     font-weight: 700;
     cursor: pointer;
     top: 10px;
-    left: 210px;
-    opacity: 0;
-    transition: all 0.3s linear;
+    left: -40px;
+    transition: all 0.3s ease;
 }
 
 #check:checked ~ .ton {
     opacity: 1;
+    left: 210px;
 }
 
 #check:checked ~ .sidebar {
